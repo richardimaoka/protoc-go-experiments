@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/richardimaoka/protoc-go-experiments/proto";
+option go_package = "github.com/richardimaoka/protoc-go-experiments/helloworld";
 
 // The greeting service definition.
 service Greeter {
