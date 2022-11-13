@@ -2,6 +2,8 @@ syntax = "proto3";
 
 option go_package = "github.com/richardimaoka/protoc-go-experiments/helloworld";
 
+import "helloworld/greeting.proto";
+
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
@@ -12,4 +14,7 @@ service Greeter {
 message HelloRequest { string name = 1; }
 
 // The response message containing the greetings
-message HelloReply { string message = 1; }
+message HelloReply {
+  string message = 1;
+  Greeting greet = 2;
+}

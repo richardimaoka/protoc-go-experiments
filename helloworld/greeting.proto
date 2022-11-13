@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package helloworld;
-
 option go_package = "github.com/richardimaoka/protoc-go-experiments/helloworld";
 
 message Greeting { string greet_message = 1; }
