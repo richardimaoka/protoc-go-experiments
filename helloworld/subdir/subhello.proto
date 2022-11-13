@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/richardimaoka/protoc-go-experiments/helloworld/subdir";
+
+// The greeting service definition.
+service SubGreeter {
+  // Sends a greeting
+  rpc SayHello(SubHelloRequest) returns (SubHelloReply) {}
+}
+
+// The request message containing the user's name.
+message SubHelloRequest { string name = 1; }
+
+// The response message containing the greetings
+message SubHelloReply { string message = 1; }
