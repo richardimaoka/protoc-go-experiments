@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/richardimaoka/protoc-go-experiments/proto/subhello";
+option go_package = "github.com/richardimaoka/protoc-go-experiments/helloworld/subhello";
 
 // The greeting service definition.
 service SubGreeter {
